@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Family book</title>
+</head>
+<body>
+ <center>  
+  <h1>Family Book</h1>
+  
+<img id="album" style="height:300px; width: 200px;" src="book.jpg">
+ <div>
+        <button type="button" onclick="nextslide()"> Next </button>
+ </div>
+ <p id="name"> "My Family"</p>
+ </center>
+
+<script>
+    var names = ["Father","Mother","brothers"];
+
+
+var images=[
+"https://www.vhv.rs/dpng/d/360-3603594_father-clipart-father-child-father-son-cartoon-characters.png","https://www.nicepng.com/png/full/89-892939_mom-cartoon-clipart-mom-animated.png","https://image.shutterstock.com/image-vector/illustration-two-brothers-go-school-260nw-82388356.jpg"
+];
+var i = 0;
+function nextslide() {document.getElementById("name").innerHTML = names[i];
+  document.getElementById("album").src = images[i];
+  i++;
+ if(i>2){i=0;}}
+
+console.log(image[1]);
+
+</script>
+</body>
+</html>
